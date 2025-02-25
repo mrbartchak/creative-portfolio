@@ -17,23 +17,4 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.animate-gradient {
-  background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #0a0a0a);
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
 }

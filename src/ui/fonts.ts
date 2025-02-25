@@ -1,10 +1,4 @@
-import { Outfit, Inter, Space_Grotesk } from "next/font/google";
-
-export const outfitFont = Outfit({
-    variable: "--font-outfit",
-    subsets: ["latin"],
-    display: "swap",
-});
+import { Inter, Space_Grotesk } from "next/font/google";
 
 export const spaceGrotesk = Space_Grotesk({
     variable: "--font-space-grotesk",
