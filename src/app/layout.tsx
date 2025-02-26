@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { zenKaku } from "@/ui/fonts";
 import "@/ui/globals.css";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Matthew Bartchak Portfolio",
@@ -14,8 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${zenKaku.variable} font-zen-kaku`}>
-        {children}
+      <body className={`${zenKaku.variable} font-zen-kaku flex bg-background text-foreground max-w-[1920px] mx-auto`}>
+        <Sidebar />
+        <main className="flex-1 p-4">
+          {children}
+        </main>
       </body>
     </html>
   );
