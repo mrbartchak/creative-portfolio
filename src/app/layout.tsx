@@ -21,7 +21,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col lg:flex-row bg-background text-foreground max-w-screen-2xl mx-auto h-screen lg:overflow-hidden`}>
+      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground max-w-screen-sm mx-auto h-screen 
+                        lg:flex-row lg:max-w-screen-2xl lg:overflow-hidden`}>
         <Sidebar />
         <main className="flex-1 p-4">
           {children}
