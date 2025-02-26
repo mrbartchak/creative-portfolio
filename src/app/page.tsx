@@ -6,9 +6,9 @@ export default function Home() {
     <main className="flex flex-col min-h-screen items-center justify-center p-4">
       {/* Hero Section */}
       <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
-        <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I'm Matthew Bartchak</h1>
+        <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I&apos;m Matthew Bartchak</h1>
         <p className="text-sm text-gray-700 mb-4 lg:text-lg">
-          I'm a Computer Science & Business graduate from Lehigh University, 
+          I&apos;m a Computer Science & Business graduate from Lehigh University, 
           currently based in New York City. I work as an IT Analyst at SMBC, 
           specializing in API gateway management and backend API development.
         </p>
