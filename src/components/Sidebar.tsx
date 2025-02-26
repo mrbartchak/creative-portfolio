@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
       <div className="flex flex-col p-4 pt-24 w-full bg-transparent lg:justify-start lg:pl-12 lg:w-96"> {/* Full Sidebar */}
         <div className="flex flex-row lg:flex-col lg:items-center"> {/* Profile photo + Name + Title */}
-          <Image src="/profile.jpg" alt="Profile" className="rounded-full lg:w-64 lg:h-64 w-32 h-32 p-2 mb-2 mr-2 drop-shadow-2xl" width={3021} height={3021} quality={100} />
+          <Image src="/profile.jpg" alt="Profile" className="rounded-full lg:w-64 lg:h-64 w-32 h-32 mb-2 mr-2 shadow-2xl" width={3021} height={3021} quality={100} />
           <div> {/* Name + Title */}
             <h2 className="text-3xl font-bold text-foreground mt-4 mb-1">Matthew Bartchak</h2>
             <p className="text-xl text-foreground text-stone-500 flex items-center gap-2">
