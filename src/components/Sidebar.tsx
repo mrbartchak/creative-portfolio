@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Sidebar = () => {
     return (
-      <div className="flex flex-col justify-start p-4 pt-44 pl-24 w-104 bg-transparent">
+      <div className="flex flex-col justify-start p-4 pt-24 pl-24 w-104 bg-transparent">
         <Image src="/profile.jpg" alt="Profile" className="rounded-full w-64 h-64 mb-4 drop-shadow-2xl" width={3021} height={3021} quality={100} />
         <h2 className="text-4xl font-bold text-foreground mt-4 mb-2">Matthew Bartchak</h2>
         <p className="text-xl text-foreground text-stone-500 flex items-center gap-2">
