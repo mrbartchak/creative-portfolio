@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Built with Next.js",
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable} font-nunito-sans flex bg-background text-foreground max-w-[1920px] mx-auto h-screen overflow-hidden`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col lg:flex-row bg-background text-foreground max-w-screen-2xl mx-auto h-screen lg:overflow-hidden`}>
         <Sidebar />
         <main className="flex-1 p-4">
           {children}
