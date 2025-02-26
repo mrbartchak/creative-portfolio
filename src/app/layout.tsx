@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { spaceGrotesk, interFont } from "@/ui/fonts";
+import { zenKaku } from "@/ui/fonts";
 import "@/ui/globals.css";
 
 export const metadata: Metadata = {
@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${spaceGrotesk.variable} ${interFont.variable} font-inter`}
-      >
+      <body className={`${zenKaku.variable} font-zen-kaku`}>
         {children}
       </body>
     </html>

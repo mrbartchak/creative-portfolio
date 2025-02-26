@@ -13,8 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        'space-grotesk': ["var(--font-space-grotesk)"],
-        'inter': ["var(--font-inter)"],
+        'zen-kaku': ["var(--font-zen-kaku)"],
       },
     },
   },
