@@ -21,10 +21,15 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground max-w-screen-sm mx-auto h-screen 
-                        lg:flex-row lg:max-w-screen-2xl lg:overflow-hidden`}>
+      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground max-w-screen-sm mx-auto h-screen scrollbar-hidden
+                        lg:flex-row lg:max-w-screen-2xl lg:overflow-hidden
+                        2xl:bg-red-200
+                        xl:bg-orange-200
+                        lg:bg-yellow-200
+                        md:bg-emerald-200
+                        sm:bg-blue-200`}>
         <Sidebar />
-        <main className="flex-1 p-4">
+        <main className="flex-1 p-4 lg:overflow-auto scrollbar-hidden">
           {children}
         </main>
         <Footer />

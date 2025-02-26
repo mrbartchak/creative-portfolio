@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function Resume() {
     return (
-      <main className="flex min-h-screen items-center justify-center">
-        <h1 className="text-4xl font-bold">Resume</h1>
+      <main className="flex flex-col min-h-screen items-center justify-center">
+        <Image src="/images/resume.png" alt="Resume" className="w-[80%] h-auto rounded-xl shadow-xl" width={1700} height={2200} />
       </main>
     );
   }

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center justify-center p-2 mx-2">
       {/* Hero Section */}
-      <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
+      <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
         <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I&apos;m Matthew Bartchak</h1>
         <p className="text-sm text-gray-700 mb-4 lg:text-lg">
           I&apos;m a Computer Science & Business graduate from Lehigh University, 
@@ -22,7 +22,7 @@ export default function Home() {
         {/* Two Stacked Cards */}
         <div className="flex flex-col space-y-4 lg:width-3/4 flex-grow">
           {/* Card A */}
-          <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
+          <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
             <div>
               <h2 className="text-lg lg:text-2xl font-bold mb-2">Current Position</h2>
               <p className="text-sm lg:text-lg text-gray-700">IT Analyst at</p>
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           {/* Card B */}
-          <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
+          <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
             <div>
               <h2 className="text-lg lg:text-2xl font-bold mb-2">Education</h2>
               <p className="text-sm lg:text-lg text-gray-700">Computer Science and Business</p>
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* Vertical Card */}
-        <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 lg:w-1/4 flex-grow">
+        <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 lg:w-1/4 flex-grow">
           <h2 className="text-lg lg:text-2xl font-bold mb-6">Technical Skills</h2>
           <ul className="grid grid-cols-2 gap-4 lg:grid-cols-1">
             <li className="flex items-center mb-4 text-orange-700">
