@@ -44,7 +44,7 @@ export default function Home() {
                 Lehigh University
               </p>
             </div>
-            <Image src="lehigh-logo.svg" alt="SMBC Logo" className="w-64 h-64 -m-16" width={48} height={48} />
+            <Image src="lehigh-logo.svg" alt="SMBC Logo" className="w-64 h-64 -m-16 -mr-12" width={48} height={48} />
           </div>
         </div>
 
