@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen items-center justify-center p-4 mx-2">
+    <main className="flex flex-col min-h-screen items-center justify-center p-2 mx-2">
       {/* Hero Section */}
       <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
         <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I&apos;m Matthew Bartchak</h1>
