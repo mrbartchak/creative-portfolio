@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center p-4">
+    <main className="flex flex-col min-h-screen items-center justify-center p-4 mx-2">
       {/* Hero Section */}
       <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
         <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I&apos;m Matthew Bartchak</h1>
@@ -45,7 +45,7 @@ export default function Home() {
         {/* Vertical Card */}
         <div className="bg-background shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 lg:w-1/4 flex-grow">
           <h2 className="text-lg lg:text-2xl font-bold mb-6">Technical Skills</h2>
-          <ul className="list-disc pl-2 text-gray-700 text-md">
+          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-1">
             <li className="flex items-center mb-4 text-orange-700">
               <Image src="java-icon.svg" alt="Java" className="w-8 h-8 mr-2" width={32} height={32} />
               Java
@@ -58,6 +58,7 @@ export default function Home() {
               <Image src="sql-icon.svg" alt="SQL" className="w-8 h-8 mr-2" width={32} height={32} />
               SQL
             </li>
+
             <li className="flex items-center mb-4 text-lime-600">
               <Image src="spring-icon.svg" alt="Spring Boot" className="w-8 h-8 mr-2" width={32} height={32} />
               Spring Boot
