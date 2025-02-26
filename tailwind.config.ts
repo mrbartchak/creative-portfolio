@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         'zen-kaku': ["var(--font-zen-kaku)"],
+        'nunito-sans': ["var(--font-nunito-sans)"],
       },
     },
   },

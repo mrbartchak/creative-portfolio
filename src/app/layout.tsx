@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { zenKaku } from "@/ui/fonts";
+import { nunitoSans, zenKaku } from "@/ui/fonts";
 import "@/ui/globals.css";
 import Sidebar from "@/components/Sidebar";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${zenKaku.variable} font-zen-kaku flex bg-background text-foreground max-w-[1920px] mx-auto`}>
+      <body className={`${nunitoSans.variable} font-nunito-sans flex bg-background text-foreground max-w-[1920px] mx-auto h-screen overflow-hidden`}>
         <Sidebar />
         <main className="flex-1 p-4">
           {children}
