@@ -24,49 +24,49 @@ export default function Home() {
           {/* Card A */}
           <div className="bg-background shadow-[0_0_32px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
             <div>
-              <h2 className="text-2xl font-bold mb-2">Current Position</h2>
-              <p className="text-lg text-gray-700">IT Analyst at</p>
-              <p className="text-lg text-gray-700">SMBC</p>
+              <h2 className="text-lg lg:text-2xl font-bold mb-2">Current Position</h2>
+              <p className="text-sm lg:text-lg text-gray-700">IT Analyst at</p>
+              <p className="text-sm lg:text-lg text-gray-700">SMBC</p>
             </div>
-            <Image src="smbc-logo.svg" alt="SMBC Logo" className="w-48 h-48 -mt-12 -mb-12" width={48} height={48} />
+            <Image src="smbc-logo.svg" alt="SMBC Logo" className="w-32 h-32 lg:w-48 lg:h-48 -mt-12 -mb-12" width={48} height={48} />
           </div>
 
           {/* Card B */}
           <div className="bg-background shadow-[0_0_32px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
             <div>
-              <h2 className="text-2xl font-bold mb-2">Education</h2>
-              <p className="text-lg text-gray-700">Computer Science and Business</p>
-              <p className="text-lg text-gray-700">Lehigh University</p>
+              <h2 className="text-lg lg:text-2xl font-bold mb-2">Education</h2>
+              <p className="text-sm lg:text-lg text-gray-700">Computer Science and Business</p>
+              <p className="text-sm lg:text-lg text-gray-700">Lehigh University</p>
             </div>
-            <Image src="lehigh-logo.svg" alt="SMBC Logo" className="w-64 h-64 -m-16 -mr-12" width={48} height={48} />
+            <Image src="lehigh-logo.svg" alt="SMBC Logo" className="w-48 h-48 lg:w-64 lg:h-64 -m-16 -mr-12" width={48} height={48} />
           </div>
         </div>
 
         {/* Vertical Card */}
         <div className="bg-background shadow-lg rounded-lg p-6 lg:w-1/4 flex-grow">
-          <h2 className="text-2xl font-bold mb-6">Technical Skills</h2>
-          <ul className="list-disc pl-2 text-gray-700">
-            <li className="flex items-center text-xl mb-4 text-orange-700">
+          <h2 className="text-lg lg:text-2xl font-bold mb-6">Technical Skills</h2>
+          <ul className="list-disc pl-2 text-gray-700 text-md">
+            <li className="flex items-center mb-4 text-orange-700">
               <Image src="java-icon.svg" alt="Java" className="w-8 h-8 mr-2" width={32} height={32} />
               Java
             </li>
-            <li className="flex items-center text-xl mb-4 text-black">
+            <li className="flex items-center mb-4 text-black">
               <Image src="nextjs-icon.svg" alt="Next.js" className="w-8 h-8 mr-2" width={32} height={32} />
               Next.js
             </li>
-            <li className="flex items-center text-xl mb-4 text-sky-400">
+            <li className="flex items-center mb-4 text-sky-400">
               <Image src="sql-icon.svg" alt="SQL" className="w-8 h-8 mr-2" width={32} height={32} />
               SQL
             </li>
-            <li className="flex items-center text-xl mb-4 text-lime-600">
+            <li className="flex items-center mb-4 text-lime-600">
               <Image src="spring-icon.svg" alt="Spring Boot" className="w-8 h-8 mr-2" width={32} height={32} />
               Spring Boot
             </li>
-            <li className="flex items-center text-xl mb-4 text-blue-500">
+            <li className="flex items-center mb-4 text-blue-500">
               <Image src="azure-icon.svg" alt="Azure APIM" className="w-8 h-8 mr-2" width={32} height={32} />
               Azure APIM
             </li>
-            <li className="flex items-center text-xl mb-4 text-red-600">
+            <li className="flex items-center mb-4 text-red-600">
               <Image src="git-icon.svg" alt="Git" className="w-8 h-8 mr-2" width={32} height={32} />
               Git
             </li>
