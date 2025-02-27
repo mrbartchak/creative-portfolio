@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-      <div className="flex flex-col p-4 lg:mt-0 w-full bg-transparent lg:justify-center lg:pl-12 lg:w-96 lg:sticky"> {/* Full Sidebar */}
-        <div className="flex flex-row lg:flex-col lg:items-center"> {/* Profile photo + Name + Title */}
-          <Image src="/images/profile.jpg" alt="Profile" className="rounded-full lg:w-64 lg:h-64 w-32 h-32 mb-2 mr-2 shadow-2xl" width={3021} height={3021} quality={100} />
+      <div className="flex flex-col p-4 bg-transparent border border-black"> {/* Full Sidebar */}
+        <div className="flex flex-row"> {/* Profile photo + Name + Title */}
+          <Image src="/images/profile.jpg" alt="Profile" className="rounded-full w-32 h-32 mb-2 mr-2 shadow-2xl" width={3021} height={3021} quality={100} />
           <div> {/* Name + Title */}
             <h2 className="text-3xl font-bold text-foreground mt-4 mb-1">Matthew Bartchak</h2>
             <p className="text-xl text-foreground text-stone-500 flex items-center gap-2">
@@ -18,7 +18,9 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <nav className="flex lg:flex-col flex-row mt-4 lg:space-x-0 space-x-2"> {/* Nav Items */}
+
+        <nav className="flex flex-row mt-4 space-x-2
+                        lg:flex-col lg:space-x-0">
           <NavItem href="/" label="Home" />
           <NavItem href="/resume" label="Resume" />
           <NavItem href="/projects" label="Projects" />
