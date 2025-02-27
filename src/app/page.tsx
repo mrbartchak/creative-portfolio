@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center lg:justify-center justify-start mx-2">
+    <main className="flex flex-col min-h-[90%] m-4 items-center lg:justify-center justify-start mx-2 space-y-4">
       {/* Hero Section */}
-      <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full h-1/3 mx-auto mb-8">
+      <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 max-w-5xl w-full mx-auto">
         <h1 className="text-xl font-bold mb-4 lg:text-3xl">Hello, I&apos;m Matthew Bartchak</h1>
         <p className="text-sm text-gray-700 mb-4 lg:text-lg">
           I&apos;m a Computer Science & Business graduate from Lehigh University, 
@@ -32,14 +32,14 @@ export default function Home() {
           </div>
 
           {/* Card B */}
-          <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
+          {/* <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 h-full flex items-center justify-between">
             <div>
               <h2 className="text-lg lg:text-2xl font-bold mb-2">Education</h2>
               <p className="text-sm lg:text-lg text-gray-700">Computer Science and Business</p>
               <p className="text-sm lg:text-lg text-gray-700">Lehigh University</p>
             </div>
             <Image src="images/logos/lehigh-logo.svg" alt="SMBC Logo" className="w-48 h-48 lg:w-64 lg:h-64 -m-16 -mr-12" width={48} height={48} />
-          </div>
+          </div> */}
         </div>
 
         {/* Vertical Card */}
