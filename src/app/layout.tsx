@@ -27,12 +27,16 @@ export default function RootLayout({
                         lg:bg-yellow-200
                         md:bg-emerald-200
                         sm:bg-blue-200`}>
-        <header className="border border-green-600">
-          <Navbar />
-        </header>
-        <main className="flex-1 scrollbar-hidden border border-blue-600">
-            {children}
-        </main>
+
+        <div className="flex flex-1 flex-col lg:flex-row">
+          <header className="border border-green-600">
+            <Navbar />
+          </header>
+          <main className="flex-1 border border-blue-600">
+              {children}
+          </main>
+        </div>
+
         <footer className="border border-pink-600">
           <Footer />
         </footer>
