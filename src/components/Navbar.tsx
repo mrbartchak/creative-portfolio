@@ -38,8 +38,8 @@ const Navbar = () => {
         <nav className="flex flex-row space-x-2
                         lg:flex-col lg:space-x-0 lg:space-y-2 lg:w-80">
           <NavItem href="/" label="Home" />
-          <NavItem href="/resume" label="Resume" />
           <NavItem href="/projects" label="Projects" />
+          <NavItem href="/resume" label="Resume" />
           <NavItem href="/contact" label="Contact" />
         </nav>
       </div>
