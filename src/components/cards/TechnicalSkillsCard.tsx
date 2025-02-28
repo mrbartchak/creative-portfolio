@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const TechnicalSkillsCard = () => {
 	return (
-        <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 w-full space-y-6">
+        <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 w-full space-y-8">
         <h2 className="text-lg font-bold">Technical Skills</h2>
-        <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 lg:justify-items-center">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 lg:justify-items-center">
             <li className="flex items-center gap-x-2 text-orange-700">
                 <Image src="images/icons/java-icon.svg" alt="Java" className="w-8 h-auto" width={32} height={32} />
                 Java
