@@ -18,25 +18,25 @@ const TechnicalSkillsCard = () => {
                 <Image src="images/icons/sql-icon.svg" alt="SQL" className="w-8 h-auto" width={32} height={32} />
                 SQL
             </li>
-            <li className="flex items-center gap-x-2 text-lime-600">
-                <Image src="images/icons/spring-icon.svg" alt="Spring Boot" className="w-8 h-auto" width={32} height={32} />
-                Spring Boot
+            <li className="flex items-center gap-x-2 text-red-600">
+                <Image src="images/icons/git-icon.svg" alt="Git" className="w-8 h-auto" width={32} height={32} />
+                Git
             </li>
             <li className="flex items-center gap-x-2 text-blue-500">
                 <Image src="images/icons/azure-icon.svg" alt="Azure APIM" className="w-8 h-auto" width={32} height={32} />
                 Azure APIM
             </li>
-            <li className="flex items-center gap-x-2 text-red-600">
-                <Image src="images/icons/git-icon.svg" alt="Git" className="w-8 h-auto" width={32} height={32} />
-                Git
+            <li className="flex items-center gap-x-2 text-yellow-400">
+                <Image src="images/icons/py-icon.svg" alt="Python" className="w-8 h-auto" width={32} height={32} />
+                Python
             </li>
             <li className="flex items-center gap-x-2 text-blue-600">
                 <Image src="images/icons/ts-icon.svg" alt="Typescript" className="w-8 h-auto" width={32} height={32} />
                 Typescript
             </li>
-            <li className="flex items-center gap-x-2 text-yellow-400">
-                <Image src="images/icons/py-icon.svg" alt="Python" className="w-8 h-auto" width={32} height={32} />
-                Python
+            <li className="flex items-center gap-x-2 text-lime-600">
+                <Image src="images/icons/spring-icon.svg" alt="Spring Boot" className="w-8 h-auto" width={32} height={32} />
+                Spring Boot
             </li>
         </ul>
     </div>
