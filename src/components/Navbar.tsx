@@ -1,13 +1,18 @@
 import NavItem from "@/components/NavItem";
+import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
     return (
       <div className="flex flex-col h-full bg-transparent space-y-8 justify-center lg:items-center"> {/* Full Sidebar */}
-        <div className="flex flex-row items-center space-x-4 lg:space-x-0 lg:space-y-8
-                        lg:flex-col"> {/* Profile photo + Name + Title */}
-          <Image src="/images/profile.jpg" alt="Profile" className="rounded-full w-32 lg:w-64 h-auto shadow-2xl" width={3021} height={3021} quality={100} />
-          
+        <div className="flex flex-row items-center space-x-4 lg:space-x-0 lg:space-y-8 lg:flex-col"> {/* Profile photo + Name + Title */}
+          <Link href="/">
+            <Image src="/images/profile.jpg" alt="Profile" width={3021} height={3021}
+              className="rounded-full w-32 lg:w-64 h-auto shadow-2xl
+              transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+            />
+          </Link>
+
           <div className=""> {/* Name + Title */}
             <h2 className="text-xl lg:text-3xl font-bold text-foreground">Matthew Bartchak</h2>
             <p className="lg:text-xl text-black opacity-60 flex items-center gap-2">
