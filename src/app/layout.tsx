@@ -21,17 +21,17 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground min-h-screen scrollbar-hidden p-2 items-center
-                        2xl:bg-red-200
-                        xl:bg-orange-200
-                        lg:bg-yellow-200
-                        md:bg-emerald-200
-                        sm:bg-blue-200`}>
-        <div className="flex flex-1 flex-col lg:flex-row max-w-screen-md lg:max-w-screen-2xl">
-          <header className="border border-green-600">
+      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground min-h-screen scrollbar-hidden items-center
+                        2xl:bg-background
+                        xl:bg-background
+                      lg:bg-yellow-200
+                      md:bg-emerald-200
+                      sm:bg-blue-200`}>
+        <div className="flex flex-1 flex-col lg:flex-row max-w-screen-md w-full lg:max-w-screen-2xl p-8 space-y-4 lg:space-y-0 lg:space-x-8">
+          <header className="w-full lg:basis-1/4">
             <Navbar />
           </header>
-          <main className="flex-1">
+          <main className="w-full flex-1 lg:basis-3/4 justify-center">
               {children}
           </main>
         </div>
