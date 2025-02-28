@@ -23,10 +23,12 @@ export default function Home() {
         <div className="flex justify-between items-center bg-none rounded-lg p-6 w-full shadow-[0_0_16px_rgba(0,0,0,0.2)] ">
           <div>
             <h2 className="text-lg font-bold mb-2">Current Position</h2>
-            <p className="text-sm text-gray-700">Information Technology Analyst at</p>
-            <p className="text-sm text-gray-700">Sumitomo Mitsui Banking Corporation</p>
+            <p className="lg:hidden text-sm text-gray-700">IT Analyst at</p>
+            <p className="hidden lg:block text-sm text-gray-700">Information Technology Analyst at</p>
+            <p className="lg:hidden text-sm text-gray-700">SMBC</p>
+            <p className="hidden lg:block text-sm text-gray-700">Sumitomo Mitsui Banking Corporation</p>
           </div>
-          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-40 h-auto" width={32} height={32} />
+          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-28 lg:w-40 h-auto" width={32} height={32} />
         </div>
         {/* Education */}
         <div className="flex justify-between items-center bg-none rounded-lg p-6 w-full shadow-[0_0_16px_rgba(0,0,0,0.2)] ">
@@ -35,13 +37,13 @@ export default function Home() {
             <p className="text-sm text-gray-700">Computer Science & Business</p>
             <p className="text-sm text-gray-700">Lehigh University &apos;24</p>
           </div>
-          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-40 h-auto -m-4 border border-red-400" width={48} height={48} />
+          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-32 lg:w-40 h-auto -m-6" width={48} height={48} />
         </div>
       </div>
 
       <div className="bg-none shadow-[0_0_16px_rgba(0,0,0,0.2)] rounded-lg p-6 w-full space-y-6">
         <h2 className="text-lg font-bold">Technical Skills</h2>
-        <ul className="grid grid-cols-3 gap-y-8">
+        <ul className="grid grid-cols-3 lg:grid-cols-4 gap-y-8 justify-items-center">
             <li className="flex items-center gap-x-2 text-orange-700">
               <Image src="images/icons/java-icon.svg" alt="Java" className="w-8 h-8" width={32} height={32} />
               Java
@@ -50,11 +52,11 @@ export default function Home() {
               <Image src="images/icons/nextjs-icon.svg" alt="Next.js" className="w-8 h-8" width={32} height={32} />
               Next.js
             </li>
+
             <li className="flex items-center gap-x-2 text-sky-400">
               <Image src="images/icons/sql-icon.svg" alt="SQL" className="w-8 h-8" width={32} height={32} />
               SQL
             </li>
-
             <li className="flex items-center gap-x-2 text-lime-600">
               <Image src="images/icons/spring-icon.svg" alt="Spring Boot" className="w-8 h-8" width={32} height={32} />
               Spring Boot
@@ -66,6 +68,10 @@ export default function Home() {
             <li className="flex items-center gap-x-2 text-red-600">
               <Image src="images/icons/git-icon.svg" alt="Git" className="w-8 h-8" width={32} height={32} />
               Git
+            </li>
+            <li className="flex items-center gap-x-2 text-blue-600">
+              <Image src="images/icons/ts-icon.svg" alt="Typescript" className="w-8 h-8" width={32} height={32} />
+              Typescript
             </li>
           </ul>
       </div>
