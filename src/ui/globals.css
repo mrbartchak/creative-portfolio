@@ -4,17 +4,35 @@
 
 :root {
   --background: #fffcfa;
-  --foreground: #171717;
+  --foreground: #1d1d1d;
 }
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1d1d1d;
+    --foreground: #fffcfa;
   }
 } */
 
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
