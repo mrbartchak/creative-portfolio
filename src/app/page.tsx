@@ -18,17 +18,17 @@ export default function Home() {
       </div>
       
 
-      <div className="flex flex-col space-y-4 w-full">
+      <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 w-full">
         {/* Current Postition */}
         <div className="flex justify-between items-center bg-none rounded-lg p-6 w-full shadow-[0_0_16px_rgba(0,0,0,0.2)] ">
           <div>
             <h2 className="text-lg font-bold mb-2">Current Position</h2>
-            <p className="lg:hidden text-sm text-foreground opacity-70">IT Analyst at</p>
-            <p className="hidden lg:block text-sm text-foreground opacity-70">Information Technology Analyst at</p>
-            <p className="lg:hidden text-sm text-foreground opacity-70">SMBC</p>
-            <p className="hidden lg:block text-sm text-foreground opacity-70">Sumitomo Mitsui Banking Corporation</p>
+            <p className="xl:hidden text-sm text-foreground opacity-70">IT Analyst at</p>
+            <p className="hidden xl:block text-sm text-foreground opacity-70">Information Technology Analyst at</p>
+            <p className="xl:hidden text-sm text-foreground opacity-70">SMBC</p>
+            <p className="hidden xl:block text-sm text-foreground opacity-70">Sumitomo Mitsui Banking Corporation</p>
           </div>
-          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-28 lg:w-40 h-auto" width={32} height={32} />
+          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-28 xl:w-40 h-auto" width={32} height={32} />
         </div>
         {/* Education */}
         <div className="flex justify-between items-center bg-none rounded-lg p-6 w-full shadow-[0_0_16px_rgba(0,0,0,0.2)] ">
@@ -37,7 +37,7 @@ export default function Home() {
             <p className="text-sm text-foreground opacity-70">Computer Science & Business</p>
             <p className="text-sm text-foreground opacity-70">Lehigh University &apos;24</p>
           </div>
-          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-32 lg:w-40 h-auto -m-6" width={48} height={48} />
+          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-32 xl:w-40 h-auto -m-6" width={48} height={48} />
         </div>
       </div>
 
