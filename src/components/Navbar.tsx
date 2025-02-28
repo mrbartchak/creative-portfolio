@@ -9,12 +9,12 @@ const Navbar = () => {
           <Image src="/images/profile.jpg" alt="Profile" className="rounded-full w-32 lg:w-64 h-auto shadow-2xl" width={3021} height={3021} quality={100} />
           
           <div className=""> {/* Name + Title */}
-            <h2 className="text-3xl font-bold text-foreground">Matthew Bartchak</h2>
-            <p className="text-xl text-black opacity-60 flex items-center gap-2">
-                <Image src="images/icons//user-icon.svg" alt="Location" className="w-4 h-4" width={16} height={16} quality={100} />
+            <h2 className="text-xl lg:text-3xl font-bold text-foreground">Matthew Bartchak</h2>
+            <p className="lg:text-xl text-black opacity-60 flex items-center gap-2">
+                <Image src="images/icons/user-icon.svg" alt="Location" className="w-4 h-4" width={16} height={16} quality={100} />
                 Developer
             </p>
-            <p className="text-xl text-black opacity-60 flex items-center gap-2">
+            <p className="lg:text-xl text-black opacity-60 flex items-center gap-2">
                 <Image src="/images/icons/pin-icon.svg" alt="Location" className="w-4 h-4" width={16} height={16} quality={100} />
                 New York, New York
             </p>
