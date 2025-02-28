@@ -1,17 +1,28 @@
+'use client';
+
 import NavItem from "@/components/NavItem";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
+
+  const toggleBackgroundColor = async () => {
+    const res = await fetch('api/toggle-bg');
+    if (res.ok) {
+      const data = await res.json();
+      document.body.style.backgroundColor = data.backgroundColor;
+    }
+  };
+
     return (
       <div className="flex flex-col h-full bg-transparent space-y-8 justify-center lg:items-center"> {/* Full Sidebar */}
         <div className="flex flex-row items-center space-x-4 lg:space-x-0 lg:space-y-8 lg:flex-col"> {/* Profile photo + Name + Title */}
-          <Link href="/">
-            <Image src="/images/profile.jpg" alt="Profile" width={3021} height={3021}
-              className="rounded-full w-32 lg:w-64 h-auto shadow-2xl
-              transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
-            />
-          </Link>
+          <Image src="/images/profile.jpg" alt="Profile" width={3021} height={3021}
+            onClick={toggleBackgroundColor}
+            draggable="false"
+            className="rounded-full w-32 lg:w-64 h-auto shadow-2xl select-none selectDisable
+            transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+          />
 
           <div className=""> {/* Name + Title */}
             <h2 className="text-xl lg:text-3xl font-bold text-foreground">Matthew Bartchak</h2>
