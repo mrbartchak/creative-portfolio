@@ -28,7 +28,7 @@ export default function Home() {
             <p className="xl:hidden text-sm text-foreground opacity-70">SMBC</p>
             <p className="hidden xl:block text-sm text-foreground opacity-70">Sumitomo Mitsui Banking Corporation</p>
           </div>
-          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-28 xl:w-40 h-auto" width={32} height={32} />
+          <Image src="/images/logos/smbc-logo.svg" alt="SMBC Logo" className="w-28 xl:w-40 h-auto -m-2" width={32} height={32} />
         </div>
         {/* Education */}
         <div className="flex justify-between items-center bg-none rounded-lg p-6 w-full shadow-[0_0_16px_rgba(0,0,0,0.2)] ">
@@ -37,7 +37,7 @@ export default function Home() {
             <p className="text-sm text-foreground opacity-70">Computer Science & Business</p>
             <p className="text-sm text-foreground opacity-70">Lehigh University &apos;24</p>
           </div>
-          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-32 xl:w-40 h-auto -m-6" width={48} height={48} />
+          <Image src="images/logos/lehigh-logo.svg" alt="Lehigh Logo" className="w-32 xl:w-40 h-auto -m-8" width={48} height={48} />
         </div>
       </div>
 
