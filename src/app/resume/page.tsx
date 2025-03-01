@@ -1,9 +1,19 @@
-//import Image from "next/image";
+import Image from "next/image";
 
 export default function Resume() {
-    return (
-      <main className="h-full border border-red-500">
-        {/*<Image src="/images/resume.png" alt="Resume" className="w-[100%] lg:w-[75%] h-auto rounded-xl shadow-xl" width={1700} height={2200} quality={100} />*/}
-      </main>
-    );
-  }
+  return (
+    <div className="h-[calc(100vh-11rem)] lg:h-[calc(100vh-8rem)] w-full overflow-auto p-4 scrollbar-hidden">
+      <div className="flex flex-col items-center justify-start pb-8">
+        <Image
+          src="/images/resume.png"
+          alt="Resume"
+          className="w-[95%] h-auto rounded-xl shadow-[0_0_5px_rgba(0,0,0,0.15)]"
+          width={1700}
+          height={2200}
+          quality={100}
+          priority
+        />
+      </div>
+    </div>
+  );
+}
