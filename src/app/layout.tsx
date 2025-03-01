@@ -19,7 +19,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground min-h-screen items-center`}>
+      <body className={`${nunitoSans.variable} font-nunito-sans flex flex-col bg-background text-foreground min-h-screen items-center scrollbar-hidden`}>
         <div className="flex flex-1 flex-col lg:flex-row max-w-screen-md w-full lg:max-w-screen-2xl p-8 space-y-8 lg:space-y-0 lg:space-x-8">
           <header className="w-full lg:basis-1/4">
             <Navbar />
