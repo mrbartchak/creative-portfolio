@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { nunitoSans } from "@/ui/fonts";
+import { nunitoSans } from "@/styles/fonts";
 import "@/ui/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
