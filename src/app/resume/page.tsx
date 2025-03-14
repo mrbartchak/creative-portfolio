@@ -7,7 +7,7 @@ export default function Resume() {
         <Image
           src="/images/resume.png"
           alt="Resume"
-          className="w-[95%] h-auto rounded-xl shadow-[0_0_5px_rgba(0,0,0,0.15)]"
+          className="w-[95%] h-auto rounded-xl shadow-[0_0_5px_rgba(0,0,0,0.15)] opacity-80"
           width={1700}
           height={2200}
           quality={100}
